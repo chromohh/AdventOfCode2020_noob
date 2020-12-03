@@ -2,6 +2,7 @@ package com.company;
 
 import com.company.days.Day_1;
 import com.company.days.Day_2;
+import com.company.days.Day_3;
 
 public class Main {
     public static void main(String[] args){
@@ -16,5 +17,11 @@ public class Main {
         d2.part1();
         d2.part2();
        */
+
+        /*
+        Day_3 d3 = new Day_3();
+        System.out.println("The answer of part 1 is : " + d3.part1(3));;
+        d3.part2();
+        */
     }
 }
