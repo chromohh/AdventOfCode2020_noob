@@ -8,26 +8,21 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Day_1 {
-    private final List<String> in;
+    private final List<Integer> in;
 
     public Day_1(){
         ReadInputs in = new ReadInputs("day1_inputs.txt");
-        this.in = in.getInputs();
+        this.in = in.getInputsAsInteger();
 
     }
 
-
-
     public void part1(){
-        List<Integer> inputs = in.stream()
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
 
         int int1 = 0;
         int int2 = 0;
 
-        for(Integer i : inputs){
-            for(Integer y : inputs){
+        for(Integer i : in){
+            for(Integer y : in){
                 if(i+y == 2020){
                     int1 = i;
                     int2 = y;
@@ -39,16 +34,13 @@ public class Day_1 {
     }
 
     public void part2(){
-        List<Integer> inputs = in.stream()
-                .map(Integer::parseInt)
-                .collect(Collectors.toList());
 
         int int1 = 0;
         int int2 = 0;
         int int3 = 0;
-        for(Integer i : inputs){
-            for(Integer y : inputs){
-                for(Integer j : inputs){
+        for(Integer i : in){
+            for(Integer y : in){
+                for(Integer j : in){
                     if(i+y+j == 2020){
                         int1 = i;
                         int2 = y;

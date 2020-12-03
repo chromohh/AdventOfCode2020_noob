@@ -11,7 +11,7 @@ public class Day_2 {
 
     public Day_2(){
         ReadInputs in = new ReadInputs("day2_inputs.txt");
-        this.in = in.getInputs();
+        this.in = in.getInputsAsString();
     }
 
     public void part1(){

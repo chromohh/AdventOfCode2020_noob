@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class ReadInputs {
     private List<String> inputs = Collections.emptyList();
@@ -20,7 +21,13 @@ public class ReadInputs {
         }
     }
 
-    public List<String> getInputs() {
+    public List<String> getInputsAsString() {
         return inputs;
+    }
+
+    public List<Integer> getInputsAsInteger() {
+        return  inputs.stream()
+                .map(Integer::parseInt)
+                .collect(Collectors.toList());
     }
 }

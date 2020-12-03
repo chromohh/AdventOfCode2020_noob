@@ -12,7 +12,7 @@ public class Day_3 {
 
     public Day_3(){
         ReadInputs in = new ReadInputs("day3_inputs.txt");
-        this.in = in.getInputs();
+        this.in = in.getInputsAsString();
     }
 
     public int part1(int row){
@@ -23,7 +23,6 @@ public class Day_3 {
             if(s.charAt(counter) == '#'){
                 treeCounter++;
             }
-
 
             if(in.get(0).length()-1 < counter + row){
                 counter = (counter + row) - in.get(0).length();
