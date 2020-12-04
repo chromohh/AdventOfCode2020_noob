@@ -20,8 +20,9 @@ public class Main {
 
         /*
         Day_3 d3 = new Day_3();
-        System.out.println("The answer of part 1 is : " + d3.part1(3));;
+        d3.part1();
         d3.part2();
-        */
+       */
+
     }
 }

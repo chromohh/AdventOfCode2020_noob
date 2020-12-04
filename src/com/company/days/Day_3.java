@@ -15,31 +15,15 @@ public class Day_3 {
         this.in = in.getInputsAsString();
     }
 
-    public int part1(int row){
-        int counter = 0;
-        int treeCounter = 0;
-        for(String s : in){
-
-            if(s.charAt(counter) == '#'){
-                treeCounter++;
-            }
-
-            if(in.get(0).length()-1 < counter + row){
-                counter = (counter + row) - in.get(0).length();
-            }else{
-                counter = counter + row;
-            }
-
-        }
-
-        return treeCounter;
+    public void part1(){
+        System.out.println("The answer of part 1 is " + treeCalcDown1(3));
     }
 
     public void part2() {
-        int int1 = part1(1);
-        int int2 = part1(3);
-        int int3 = part1(5);
-        int int4 = part1(7);
+        int int1 = treeCalcDown1(1);
+        int int2 = treeCalcDown1(3);
+        int int3 = treeCalcDown1(5);
+        int int4 = treeCalcDown1(7);
 
         int counter = 0;
         int treeCounter = 0;
@@ -63,6 +47,26 @@ public class Day_3 {
         result = result.multiply(BigInteger.valueOf(treeCounter));
 
         System.out.println("The answer of part 2 is : " + result);
+    }
+
+    public int treeCalcDown1(int row){
+        int counter = 0;
+        int treeCounter = 0;
+        for(String s : in){
+
+            if(s.charAt(counter) == '#'){
+                treeCounter++;
+            }
+
+            if(in.get(0).length()-1 < counter + row){
+                counter = (counter + row) - in.get(0).length();
+            }else{
+                counter = counter + row;
+            }
+
+        }
+
+        return treeCounter;
     }
 
 }
