@@ -30,4 +30,12 @@ public class ReadInputs {
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
     }
+
+    public String getInputsAsOneString() {
+        StringBuilder sb = new StringBuilder();
+        for(String s:inputs){
+            sb.append(s + "\n");
+        }
+        return sb.toString();
+    }
 }

@@ -3,6 +3,7 @@ package com.company;
 import com.company.days.Day_1;
 import com.company.days.Day_2;
 import com.company.days.Day_3;
+import com.company.days.Day_4;
 
 public class Main {
     public static void main(String[] args){
@@ -23,6 +24,9 @@ public class Main {
         d3.part1();
         d3.part2();
        */
+
+        Day_4 d4 = new Day_4();
+        d4.test();
 
     }
 }
