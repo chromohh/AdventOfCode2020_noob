@@ -26,7 +26,7 @@ public class Main {
        */
 
         Day_4 d4 = new Day_4();
-        d4.test();
+        d4.part1();
 
     }
 }

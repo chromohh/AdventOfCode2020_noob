@@ -38,4 +38,10 @@ public class ReadInputs {
         }
         return sb.toString();
     }
+
+    public String[] getJoinedStringArrWOLines(){
+        return String.join("\n", getInputsAsString())
+                .replaceAll("\\b\\n\\b", " ")
+                .split("\\n\\n");
+    }
 }
