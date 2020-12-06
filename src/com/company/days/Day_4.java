@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Day_4 {
     private final String[] in;
-    private Scanner scanner;
 
     public Day_4(){
         ReadInputs in = new ReadInputs("day4_inputs.txt");

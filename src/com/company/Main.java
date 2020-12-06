@@ -1,9 +1,6 @@
 package com.company;
 
-import com.company.days.Day_1;
-import com.company.days.Day_2;
-import com.company.days.Day_3;
-import com.company.days.Day_4;
+import com.company.days.*;
 
 public class Main {
     public static void main(String[] args){
@@ -25,8 +22,13 @@ public class Main {
         d3.part2();
        */
 
+        /*
         Day_4 d4 = new Day_4();
         d4.part1();
+       */
+
+        Day_5 d5 = new Day_5();
+        d5.part1();
 
     }
 }
